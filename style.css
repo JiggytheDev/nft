@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.equ {
+    width: 16rem;
+    margin: 1rem;
+    border-radius: 7px;
+    position: relative;
+}
+
+.equ img {
+    width: 16rem;
+    border-radius: 7px;
+    object-fit: cover;
+}
+
+.place {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsl(180, 100%, 46%);
+    width: 16rem;
+    height: 16rem;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    border-radius: 7px;
+}
+
+.place img {
+    width: 3rem;
+    object-fit: cover;
+}
+
+.equ:hover .place {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.equ:hover .place img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.text {
+    border: 1px solid;
+    position: relative;
+    visibility: visible;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.card .para {
+    margin: 1rem;
+    color: hsl(215, 51%, 70%) ;
+}
+
+h1 {
+    margin: 1rem;
+    color: #fff;
+    font-size: 18px;
+}
+
+h1:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1rem;
+}
+
+.eth p:first-child {
+    color: cyan;
+}
+
+.eth p:nth-child(2) {
+    color: hsl(215, 51%, 70%);
+}
+
+.eth img {
+    position: relative;
+    right: 5px;
+    top: 2px;
+}
+
+.avatar {
+    margin: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.avatar p {
+    margin: 1rem;
+    color: hsl(215, 51%, 70%);
+    word-spacing: .1rem;
+}
+
+.avatar i {
+    font-style: normal;
+    color: hsl(0, 0%, 100%);
+}
+
+.avatar i:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.attribution {
+    margin: 1rem;
+}
+
+a {
+    color: hsl(215, 51%, 70%);
+}
+
+a:hover {
+    color: cyan;
+    text-decoration: underline;
+}
+
